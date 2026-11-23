@@ -92,3 +92,4 @@ ShoppingWishlistManager_VSCode/
 - Removing an item does not renumber the remaining IDs.
 - Duplicate item names are rejected (case-insensitive).
 - Prices and quantities must be greater than zero.
+# Shopping-Wishlist-Manager
