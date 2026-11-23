@@ -1,24 +1,87 @@
-# Shopping Wishlist Manager (Java) — VS Code Edition
+# Shopping Wishlist Manager
 
-A modular console-based Java project using a **custom singly linked list**, manual Bubble Sort, manual linear search, and file handling.
+A Java-based console application designed to manage shopping wishlists efficiently. It provides features for adding, viewing, searching, sorting, updating, and removing wishlist items with persistent file storage.
 
-## Included from the first run
+The project demonstrates core Java programming, Object-Oriented Programming, custom data structures, searching, sorting, and file handling.
 
-The project starts with **45 sample wishlist items** (IDs W101–W145). The first time you run it, these items are loaded from `data/starter_items.txt` and saved into `data/wishlist.dat` automatically.
+## Features
 
-## Requirements
+- **Add Items:** Add products with names, prices, categories, and quantities.
+- **View Wishlist:** Display all saved wishlist items with their details.
+- **Search Items:** Search products using their ID or exact name.
+- **Remove Items:** Delete products using their unique item ID.
+- **Update Quantity:** Modify the quantity of existing products.
+- **Price Sorting:** Sort items from low to high or high to low.
+- **Category Filtering:** Filter products by category.
+- **Wishlist Summary:** View total items, quantities, and estimated cost.
+- **Data Persistence:** Automatically save and load wishlist data.
+- **Sample Data:** Includes 45 preloaded sample wishlist items.
 
-- JDK 17 or newer (JDK 25 is also fine)
+## Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Java | Core application development |
+| ArrayList | Supporting data operations where applicable |
+| Custom Singly Linked List | Wishlist data management |
+| Bubble Sort | Manual price sorting |
+| Linear Search | Item searching |
+| File Handling | Persistent data storage |
+| VS Code | Development environment |
+| Git & GitHub | Version control |
+
+## Project Structure
+
+```text
+Shopping-Wishlist-Manager/
+│
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/ritik/wishlist/
+│               ├── Main.java
+│               ├── model/
+│               │   └── WishlistItem.java
+│               ├── structure/
+│               │   ├── Node.java
+│               │   └── WishlistLinkedList.java
+│               ├── service/
+│               │   └── WishlistService.java
+│               ├── storage/
+│               │   └── WishlistRepository.java
+│               └── ui/
+│                   └── ConsoleInput.java
+│
+├── docs/
+│   ├── PROJECT_REPORT.md
+│   ├── TEST_CASES.md
+│   └── ARCHITECTURE.md
+│
+├── README.md
+└── .gitignore
+```
+
+## How to Run
+
+### Prerequisites
+
+- Java JDK 17 or later
 - Visual Studio Code
-- Recommended VS Code extension: **Extension Pack for Java** by Microsoft
+- Java Extension Pack (recommended)
 
-## Open and run in VS Code
+### Step 1: Clone the Repository
 
-1. Extract the ZIP file to a normal folder, for example `D:\ShoppingWishlistManager_VSCode`.
-2. Open VS Code.
-3. Select **File → Open Folder** and choose the extracted `ShoppingWishlistManager_VSCode` folder (the folder that contains `src`, `data`, and this README).
-4. Select **Terminal → New Terminal**. Check that the terminal path ends with `ShoppingWishlistManager_VSCode`.
-5. Paste this PowerShell command to compile every Java source file:
+```bash
+git clone https://github.com/ritikksingh234/Shopping-Wishlist-Manager.git
+```
+
+### Step 2: Open the Project
+
+Open the downloaded project folder in Visual Studio Code.
+
+### Step 3: Compile the Java Files
+
+Open the VS Code terminal and execute:
 
 ```powershell
 $files = Get-ChildItem -Path .\src\main\java -Recurse -Filter *.java | ForEach-Object { $_.FullName }
@@ -26,70 +89,43 @@ New-Item -ItemType Directory -Force -Path .\out | Out-Null
 javac -encoding UTF-8 -d .\out $files
 ```
 
-6. If compilation finishes without an error, run:
+### Step 4: Run the Application
 
 ```powershell
 java -cp .\out com.ritik.wishlist.Main
 ```
 
-**Important:** Copy only the commands inside the code blocks. Do not type `PS D:\...>` or copy the command prompt/output. Run the commands from the main project folder, not from `src`.
+## Concepts Demonstrated
 
-## Menu options
+- Object-Oriented Programming
+- Classes and Objects
+- Encapsulation
+- Custom Singly Linked List
+- Node-based data management
+- Bubble Sort algorithm
+- Linear Search algorithm
+- File Handling and Data Persistence
+- Modular Java Project Architecture
 
-1. Add a new item
-2. Display all wishlist items
-3. Sort by price (low to high)
-4. Sort by price (high to low)
-5. Remove an item by ID
-6. Search by ID or exact item name
-7. Update quantity
-8. Filter by category
-9. Wishlist summary and total cost
-0. Save and exit
+## Future Improvements
 
-## Data and persistence
+- Graphical User Interface (GUI)
+- Database integration using MySQL
+- User authentication
+- Product image support
+- Shopping price comparison
+- Web-based wishlist management
 
-- `data/starter_items.txt`: the 45 starter records. It is used only when no saved binary file exists.
-- `data/wishlist.dat`: primary binary save file, created automatically.
-- `data/wishlist_backup.txt`: readable text backup, updated whenever the application saves.
-- Your changes are saved after add, remove, quantity update, sort, and exit.
+## Author
 
-To reset to the original 45 sample items, close the program and delete **both** `data/wishlist.dat` and `data/wishlist_backup.txt`. Keep `starter_items.txt`, then run the project again.
+**Ritik Kumar Singh**
 
-## Project structure
+B.Tech Computer Science and Engineering
 
-```text
-ShoppingWishlistManager_VSCode/
-├── data/
-│   └── starter_items.txt
-├── docs/
-│   ├── ARCHITECTURE.md
-│   └── TEST_CASES.md
-├── src/main/java/com/ritik/wishlist/
-│   ├── Main.java
-│   ├── model/WishlistItem.java
-│   ├── structure/Node.java
-│   ├── structure/WishlistLinkedList.java
-│   ├── service/WishlistService.java
-│   ├── storage/WishlistRepository.java
-│   └── ui/ConsoleInput.java
-└── README.md
-```
+GitHub: [ritikksingh234](https://github.com/ritikksingh234)
 
-## Concepts demonstrated
+---
 
-- Classes, objects, encapsulation, packages
-- Custom singly linked list (`Node`, `head`, `tail`, `next`)
-- Manual Bubble Sort (no `Collections.sort()` / `Arrays.sort()`)
-- Manual linear search (no built-in search utility)
-- Add, display, update, remove, category filtering
-- Binary object serialization and readable text backup
-- Input validation and exception handling
+If you find this project useful, consider giving it a ⭐ on GitHub.
 
-## Notes
-
-- New IDs begin at W146 because the starter list already contains W101–W145.
-- Removing an item does not renumber the remaining IDs.
-- Duplicate item names are rejected (case-insensitive).
-- Prices and quantities must be greater than zero.
-# Shopping-Wishlist-Manager
+**Developed as a Java learning and portfolio project.**
