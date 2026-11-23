@@ -1,0 +1,46 @@
+# id|name|unitPrice|category|quantity
+W101|Wireless Headphones|2499|Electronics|1
+W102|Laptop Backpack|1299|Fashion|1
+W103|Mechanical Keyboard|3499|Electronics|1
+W104|Wireless Mouse|799|Electronics|1
+W105|USB-C Hub|1599|Electronics|1
+W106|Laptop Stand|999|Electronics|1
+W107|Bluetooth Speaker|1899|Electronics|1
+W108|Power Bank 20000mAh|1799|Electronics|1
+W109|Smart Watch|2999|Electronics|1
+W110|Phone Case|399|Accessories|1
+W111|Tempered Glass|199|Accessories|2
+W112|USB-C Cable|299|Accessories|2
+W113|Desk Lamp|899|Home|1
+W114|Study Table Organizer|549|Home|1
+W115|Water Bottle|499|Lifestyle|1
+W116|Travel Mug|699|Lifestyle|1
+W117|Running Shoes|2799|Fashion|1
+W118|Casual Sneakers|2299|Fashion|1
+W119|Cotton T-Shirt|599|Fashion|2
+W120|Hoodie|1499|Fashion|1
+W121|Jeans|1599|Fashion|1
+W122|Wrist Watch|1899|Fashion|1
+W123|Sunglasses|999|Fashion|1
+W124|Wallet|699|Fashion|1
+W125|Notebook Set|349|Stationery|3
+W126|Gel Pen Pack|149|Stationery|2
+W127|Highlighter Set|199|Stationery|1
+W128|Desk Mat|499|Stationery|1
+W129|Whiteboard|799|Study|1
+W130|Scientific Calculator|1199|Study|1
+W131|Data Structures Book|699|Books|1
+W132|Java Programming Book|849|Books|1
+W133|Clean Code Book|999|Books|1
+W134|Operating Systems Book|749|Books|1
+W135|USB Flash Drive 64GB|599|Storage|1
+W136|External SSD 1TB|6999|Storage|1
+W137|Portable Hard Drive 1TB|4599|Storage|1
+W138|Webcam 1080p|2199|Electronics|1
+W139|Laptop Cooling Pad|1299|Electronics|1
+W140|HDMI Cable|349|Accessories|1
+W141|Surge Protector|899|Electronics|1
+W142|Mini Tripod|599|Photography|1
+W143|Ring Light|1099|Photography|1
+W144|Yoga Mat|799|Fitness|1
+W145|Resistance Bands|499|Fitness|1

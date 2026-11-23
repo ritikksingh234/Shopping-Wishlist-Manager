@@ -1,0 +1,4 @@
+out/
+data/wishlist.dat
+data/wishlist_backup.txt
+*.class
